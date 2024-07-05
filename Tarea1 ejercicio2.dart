@@ -55,7 +55,7 @@ void main() {
   lista.agregarTareas(Tarea('Ensayo de las funciones de un Sistema Operativo',
       'El modelo de aprendizaje para investigar y aprender mas a fondo sobre los sistemas Operativos'));
 
-  print('\nLista de tareas:');
+  print('\nLISTAS DE TAREAS:');
   lista.verTareas();
 
   lista.tareaCompletada('Proyecto de Lenguajes de Programacion');
