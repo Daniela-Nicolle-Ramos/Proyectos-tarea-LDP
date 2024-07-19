@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:myapp/screens/registration_screen.dart';
 import 'package:myapp/screens/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -7,8 +7,6 @@ class LoginScreen extends StatelessWidget {
 
   final correoController = TextEditingController();
   final passwordController = TextEditingController();
-
-  final GlobalKey<FormState> formkey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -70,15 +68,18 @@ class LoginScreen extends StatelessWidget {
                       onPressed: () => login(context),
                       child: Text('Iniciar Sesión'),
                     ),
-                    /* TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => RegistroScreen()),
-                                );
-              },
-              //child: Text('Registrarse'),/// no funciona, aun no esta hecho el registro
-            ),*/
+                    TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => RegistroScreen()),
+                        );
+                      },
+                      child: Text('Registrarse'),
+
+                      /// no funciona, aun no esta hecho el registro
+                    ),
                   ],
                 ),
               ),
